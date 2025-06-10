@@ -151,20 +151,33 @@ ShopSphere-MERN/
 
 #### Backend (.env)
 ```env
-PORT=8000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-JWT_EXPIRES_IN=7d
-EMAIL_HOST=smtp.gmail.com
-EMAIL_PORT=587
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-ORIGIN=http://localhost:3000
+# Database connection string
+MONGO_URI="mongodb://localhost:27017/your-database-name"
+
+# Frontend URL (adjust if needed)
+ORIGIN="http://localhost:3000"
+
+# Email credentials for sending password resets and OTPs
+EMAIL="your-email@example.com"
+PASSWORD="your-email-password"
+
+# Token and cookie expiration settings
+LOGIN_TOKEN_EXPIRATION="30d"                # Days
+OTP_EXPIRATION_TIME="120000"                # Milliseconds
+PASSWORD_RESET_TOKEN_EXPIRATION="2m"        # Minutes
+COOKIE_EXPIRATION_DAYS="30"                 # Days
+
+# Secret key for JWT security
+SECRET_KEY="your-secret-key"
+
+# Environment (production/development)
+PRODUCTION="false"                          # Set to false for development
 ```
 
 #### Frontend (.env)
 ```env
-REACT_APP_BASE_URL=http://localhost:8000
+# Backend URL (adjust if needed)
+REACT_APP_BASE_URL="http://localhost:8000" 
 ```
 
 ### Database Setup
