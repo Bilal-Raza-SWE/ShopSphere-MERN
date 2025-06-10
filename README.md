@@ -2,7 +2,7 @@
 
 A full-stack MERN (MongoDB, Express.js, React, Node.js) e-commerce application with secure authentication, user/admin functionality, and a modern Material-UI interface.
 
-![ShopSphere Banner](frontend/src/assets/images/banner1.jpg)
+![ShopSphere Banner](frontend/src/assets/images/banner%201.jpg)
 
 ## ✨ Features
 
