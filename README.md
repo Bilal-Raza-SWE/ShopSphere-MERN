@@ -131,7 +131,7 @@ ShopSphere-MERN/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/ShopSphere-MERN.git
+   git clone https://github.com/Bilal-Raza-SWE/ShopSphere-MERN.git
    cd ShopSphere-MERN
    ```
 
